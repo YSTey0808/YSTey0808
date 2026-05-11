@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Tey Yee Siang 👋</h1>
+[<h1 align="center">Hi, I'm Tey Yee Siang 👋</h1>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
@@ -18,7 +18,7 @@
 - 💼 Incoming **IT Infrastructure Intern @ SP Group** — Cloud, DevOps & Microsoft AI/Low-Code stack
 - 🌏 President of the **NUS Malaysian Students' League**, leading a committee of 30+
 - 🔭 Currently exploring **LLM evaluation**, **RAG systems**, and **distributed AI serving**
-- 📫 Reach me on [LinkedIn](https://www.linkedin.com/) · 📍 Singapore
+- 📫 Reach me on [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/yee-siang-tey/)) · 📍 Singapore
 
 ---
 
@@ -32,14 +32,14 @@
       <p><code>Python</code> <code>LangChain</code> <code>OpenAI</code> <code>RAG</code></p>
     </td>
     <td width="50%" valign="top">
-      <h4>🗺️ <a href="https://github.com/YSTey0808/roamwise">RoamWise</a></h4>
+      <h4>🗺️ <a href="[https://github.com/YSTey0808/roamwise](https://github.com/meowzz28/roamwise-orbital)">RoamWise</a></h4>
       <p>A <b>collaborative trip-planning app</b> built for NUS Orbital — won the highest public vote count in its cohort.</p>
       <p><code>React</code> <code>Firebase</code> <code>JavaScript</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>👵 <a href="https://github.com/YSTey0808/care4you">Care4You</a></h4>
+      <h4>👵 <a href="[https://github.com/YSTey0808/care4you](https://github.com/Hack4Funnn/care4you)">Care4You</a></h4>
       <p>A <b>React Native elderly-care app</b> built for Hack4Good 2026, backed by Supabase.</p>
       <p><code>React Native</code> <code>Supabase</code> <code>TypeScript</code></p>
     </td>
@@ -94,3 +94,4 @@
 ---
 
 <p align="center"><i>"Always building, always learning."</i></p>
+](https://github.com/meowzz28/roamwise-orbital)
