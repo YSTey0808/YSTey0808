@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="1000" height="200" role="img" aria-label="Pipeline: a pull request diff is triaged, scored by a locally hosted LLM, returned as a structured JSON verdict, and enforced by a fail-closed merge gate.">
+  <title>On-premise LLM pull-request security gate</title>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="60%" stop-color="#0f1a2b"/>
+      <stop offset="100%" stop-color="#0b1c26"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#003d7c"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3d6b8f"/>
+    </marker>
+
+    <style>
+      .node       { fill: #111c2b; stroke-width: 1.5; }
+      .label      { font-family: "Segoe UI", Inter, system-ui, sans-serif; font-size: 15px;
+                    font-weight: 600; fill: #e6edf3; }
+      .sub        { font-family: "Fira Code", ui-monospace, monospace; font-size: 10.5px;
+                    fill: #7d94ab; letter-spacing: .02em; }
+      .heading    { font-family: "Segoe UI", Inter, system-ui, sans-serif; font-size: 13px;
+                    font-weight: 700; fill: #a5d8e8; letter-spacing: .12em; }
+      .wire       { stroke: #2b4763; stroke-width: 1.5; fill: none; }
+      .pulse      { stroke: #0891b2; stroke-width: 1.5; fill: none;
+                    stroke-dasharray: 5 9; animation: flow 1.1s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -14; } }
+
+      .glow       { animation: breathe 3.2s ease-in-out infinite; }
+      @keyframes breathe { 0%,100% { stroke-opacity: .45; } 50% { stroke-opacity: 1; } }
+
+      .n1 { animation-delay: 0s; }   .n2 { animation-delay: .35s; }
+      .n3 { animation-delay: .7s; }  .n4 { animation-delay: 1.05s; }
+      .n5 { animation-delay: 1.4s; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .pulse, .glow { animation: none; }
+        .pulse { stroke-opacity: .8; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="200" rx="12" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="999" height="199" rx="12" fill="none" stroke="#1e3247"/>
+
+  <text class="heading" x="24" y="30">ON-PREMISE LLM PR SECURITY GATE</text>
+  <rect x="24" y="40" width="180" height="2" rx="1" fill="url(#rule)"/>
+
+  <!-- connectors -->
+  <g>
+    <line class="wire"  x1="184" y1="106" x2="216" y2="106" marker-end="url(#arrow)"/>
+    <line class="pulse" x1="184" y1="106" x2="212" y2="106"/>
+    <line class="wire"  x1="382" y1="106" x2="414" y2="106" marker-end="url(#arrow)"/>
+    <line class="pulse" x1="382" y1="106" x2="410" y2="106"/>
+    <line class="wire"  x1="580" y1="106" x2="612" y2="106" marker-end="url(#arrow)"/>
+    <line class="pulse" x1="580" y1="106" x2="608" y2="106"/>
+    <line class="wire"  x1="778" y1="106" x2="810" y2="106" marker-end="url(#arrow)"/>
+    <line class="pulse" x1="778" y1="106" x2="806" y2="106"/>
+  </g>
+
+  <!-- stages -->
+  <g>
+    <rect class="node glow n1" x="24"  y="74" width="160" height="64" rx="9" stroke="#1c4e80"/>
+    <text class="label" x="104" y="102" text-anchor="middle">PR diff</text>
+    <text class="sub"   x="104" y="121" text-anchor="middle">opened / updated</text>
+
+    <rect class="node glow n2" x="222" y="74" width="160" height="64" rx="9" stroke="#12608f"/>
+    <text class="label" x="302" y="102" text-anchor="middle">Tiered triage</text>
+    <text class="sub"   x="302" y="121" text-anchor="middle">fit to context window</text>
+
+    <rect class="node glow n3" x="420" y="74" width="160" height="64" rx="9" stroke="#0b7396"/>
+    <text class="label" x="500" y="102" text-anchor="middle">Local model</text>
+    <text class="sub"   x="500" y="121" text-anchor="middle">Ollama · no egress</text>
+
+    <rect class="node glow n4" x="618" y="74" width="160" height="64" rx="9" stroke="#0a839f"/>
+    <text class="label" x="698" y="102" text-anchor="middle">JSON verdict</text>
+    <text class="sub"   x="698" y="121" text-anchor="middle">structured + scored</text>
+
+    <rect class="node glow n5" x="816" y="74" width="160" height="64" rx="9" stroke="#0891b2"/>
+    <text class="label" x="896" y="102" text-anchor="middle">Merge gate</text>
+    <text class="sub"   x="896" y="121" text-anchor="middle">fail-closed</text>
+  </g>
+
+  <text class="sub" x="24"  y="172">Threshold tuned on recall and false-positive rate — biased toward false positives.</text>
+  <text class="sub" x="976" y="172" text-anchor="end">Inference stays inside the network.</text>
+</svg>
