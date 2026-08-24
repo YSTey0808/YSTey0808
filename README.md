@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,45:003d7c,75:0e7490,100:0891b2&height=230&section=header&text=Tey%20Yee%20Siang&fontSize=60&fontColor=ffffff&fontAlignY=34&animation=fadeIn&desc=Computer%20Science%20%28AI%29%20%40%20NUS%20%7C%20LLM%20Security%20%26%20Full-Stack%20Engineering&descSize=17&descColor=a5d8e8&descAlignY=55" alt="Tey Yee Siang" />
+<img width="100%" src="./.github/assets/header.svg" alt="Tey Yee Siang — Computer Science (AI) @ NUS | LLM Security & Full-Stack Engineering" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=780&lines=Computer+Science+%28AI%29+%40+NUS;Building+on-premise+LLM+security+tooling;RAG+%7C+GNNs+%7C+real-time+detection+systems;Always+building%2C+always+learning" alt="Typing SVG" />
@@ -320,6 +320,6 @@ Open to (Summer 2027 internships):
 
 <i>"Always building, always learning."</i>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,45:003d7c,75:0e7490,100:0891b2&height=120&section=footer&animation=twinkling" alt="" />
+<img width="100%" src="./.github/assets/footer.svg" alt="" />
 
 </div>

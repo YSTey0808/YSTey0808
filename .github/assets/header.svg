@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" width="1200" height="230" role="img" aria-label="Tey Yee Siang — Computer Science (AI) at NUS, LLM security and full-stack engineering">
+  <title>Tey Yee Siang</title>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0d1117"/>
+      <stop offset="45%"  stop-color="#003d7c"/>
+      <stop offset="75%"  stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+
+    <linearGradient id="waveA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0d1117"/>
+      <stop offset="55%"  stop-color="#062a52"/>
+      <stop offset="100%" stop-color="#0a6f8c"/>
+    </linearGradient>
+
+    <linearGradient id="waveB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#111c2b"/>
+      <stop offset="55%"  stop-color="#0a3f70"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+
+    <style>
+      .name { font-family: "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+              font-size: 58px; font-weight: 700; fill: #ffffff; letter-spacing: 2px; }
+      .desc { font-family: "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+              font-size: 17px; font-weight: 500; fill: #a5d8e8; letter-spacing: .5px; }
+
+      .fade { opacity: 0; animation: fadeIn 1.1s ease-out .15s forwards; }
+      .fade2 { opacity: 0; animation: fadeIn 1.1s ease-out .45s forwards; }
+      @keyframes fadeIn { to { opacity: 1; } }
+
+      .drift  { animation: drift 9s linear infinite; }
+      .drift2 { animation: drift 14s linear infinite; }
+      @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-600px); } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .fade, .fade2 { opacity: 1; animation: none; }
+        .drift, .drift2 { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="230" fill="url(#sky)"/>
+
+  <!-- back wave -->
+  <g transform="translate(0,132)" opacity=".55">
+    <g class="drift2">
+      <path fill="url(#waveB)"
+            d="M0,40 q150,-26 300,0 t300,0 t300,0 t300,0 t300,0 t300,0 t300,0 t300,0 L2400,120 L0,120 Z"/>
+    </g>
+  </g>
+
+  <!-- front wave -->
+  <g transform="translate(0,158)">
+    <g class="drift">
+      <path fill="url(#waveA)"
+            d="M0,34 q150,-30 300,0 t300,0 t300,0 t300,0 t300,0 t300,0 t300,0 t300,0 L2400,120 L0,120 Z"/>
+    </g>
+  </g>
+
+  <text class="name fade"  x="600" y="104" text-anchor="middle">Tey Yee Siang</text>
+  <text class="desc fade2" x="600" y="140" text-anchor="middle">Computer Science (AI) @ NUS &#160;|&#160; LLM Security &amp; Full-Stack Engineering</text>
+</svg>
